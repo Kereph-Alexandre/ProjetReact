@@ -1,7 +1,13 @@
+import { Route, Routes } from "react-router";
+
 function App() {
   return (
     <>
-      <header className="App-header"></header>
+      <Routes>
+        <Route />
+        <Route />
+        <Route />
+      </Routes>
     </>
   );
 }
