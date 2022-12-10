@@ -1,19 +1,19 @@
 import { Route, Routes } from "react-router";
 import { Link } from "react-router-dom";
+import EmployeeFocusPage from "./Pages/EmployeeFocusPage";
 import EmployeeListPage from "./Pages/EmployeeListPage";
-import Home from "./Pages/Home";
 
 function App() {
   return (
     <>
       <ul>
-        <Link to="/">Accueil</Link>
-        <Link to="/EmployeeList">Nos Collaborateurs</Link>
+        <Link to="/">Nos Collaborateurs</Link>
+        <Link to="/Focus">Focus</Link>
       </ul>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/EmployeeList" element={<EmployeeListPage />} />
+        <Route path="/" element={<EmployeeListPage />} />
+        <Route path="/Focus" element={<EmployeeFocusPage />} />
       </Routes>
     </>
   );
