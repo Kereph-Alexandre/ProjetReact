@@ -5,6 +5,9 @@ import EmployeeData from "../Data/Mock_data.json";
 export default function EmployeeFocusPage() {
   const [employeeIndex, setEmployeeIndex] = useState(0);
 
+  /**
+   * Incrémente l'index de l'employé à afficher & vérifie qu'il ne dépasse pas l'index maximum
+   */
   function addOne() {
     setEmployeeIndex(employeeIndex + 1);
     if (employeeIndex >= EmployeeData.length - 1) {
@@ -12,6 +15,9 @@ export default function EmployeeFocusPage() {
     }
   }
 
+  /**
+   * Décrémente l'index de l'employé à afficher & s'assure qu'il ne devienne pas négatif
+   */
   function substractOne() {
     setEmployeeIndex(employeeIndex - 1);
 
